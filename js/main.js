@@ -147,7 +147,6 @@
 
 // Function to save form data to localStorage as an object
 function saveData() {
-    console.log("save1")
     const formData = {
         name: document.getElementById('name').value,
         surname: document.getElementById('surname').value,
@@ -161,7 +160,6 @@ function saveData() {
 
 // Function to load saved data from localStorage and populate the form
 function loadData() {
-    console.log("load1")
     const savedData = localStorage.getItem('formData'); // Retrieve the saved data
 
     if (savedData) {
@@ -183,7 +181,6 @@ function loadData() {
 
 // Function to clear formData from localStorage only
 function clearFormData() {
-    console.log("clear1")
     localStorage.removeItem('formData'); // Remove only the formData object from localStorage
     alert("Form data has been cleared from localStorage!");
 }
